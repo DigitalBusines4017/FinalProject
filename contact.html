@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sunny Spain Escapes | Contact Us</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+  <div class="container navbar">
+    <div class="logo">Sunny<span>Spain</span> Escapes</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="hotels-resorts.html">Hotels &amp; Resorts</a></li>
+        <li><a href="contact.html" class="active">Contact us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <h2 class="section-title">Start Planning Your Spanish Holiday</h2>
+
+    <div class="grid">
+      <div>
+        <p style="margin-bottom:1rem;">
+          Tell us a little about the holiday you have in mind and one of our Spain
+          specialists will be in touch with a personalised quote.
+        </p>
+        <p><strong>Phone:</strong> +44 (0)20 0000 0000 (example)</p>
+        <p><strong>Email:</strong> hello@sunnyspainescapes.example</p>
+        <p><strong>Office hours:</strong> Mon–Fri 09:00–17:30 (UK time)</p>
+      </div>
+
+      <form onsubmit="handleSubmit(event)">
+        <div class="form-group">
+          <label for="name">Full name</label>
+          <input id="name" type="text" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input id="email" type="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone number (optional)</label>
+          <input id="phone" type="tel" />
+        </div>
+
+        <div class="form-group">
+          <label for="destination">Preferred destination</label>
+          <select id="destination">
+            <option value="">Any</option>
+            <option>Barcelona</option>
+            <option>Madrid</option>
+            <option>Costa del Sol</option>
+            <option>Balearic Islands</option>
+            <option>Canary Islands</option>
+            <option>Other / not sure yet</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="details">Tell us about your ideal trip</label>
+          <textarea id="details" placeholder="Dates, number of travellers, type of holiday..."></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary">Send Enquiry</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2025 Sunny Spain Escapes. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  function handleSubmit(event) {
+    event.preventDefault();
+    alert("Thank you! This is a demo form only – no enquiry has been sent.");
+  }
+</script>
+</body>
+</html>
